@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 투명도</title>
+    <style>
+        #box{
+            width : 300px;
+            height : 300px;
+            background : url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20110415_31%2Fshin_128_1302865427818RCx9W_JPEG%2F%25B1%25CD%25BF%25A9%25BF%25EE%25C0%25CC%25B9%25CC%25C1%25F6000018.JPG&type=sc960_832);
+            margin:auto;/*양 옆의 남는 공간을 양분하여 동일하게 배분*/
+        }
+        #mask{
+            width : 300px;
+            height: 300px;
+            background: black;
+
+            /*opacity 투명도*/
+
+        }
+
+        #box:hover #mask{
+            opacity:0.8; /*1완전 불투명, 0완전 투명*/
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 이미지 뱌경을 가진  박스 -->
+    <div id = "box">
+        <!-- 이미지를 가릴 마스크 -->
+        <div id = "mask">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+복습
+
+실제 width = whidth + border + padding
+box-sizing:border-box;
+(pseudo)유사, 가짜, 가상 클래스 엘리먼트
+selector, : id,class, name, tag 명 상태나 다른 요소와의 관계

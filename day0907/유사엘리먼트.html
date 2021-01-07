@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p:first-child{
+            color : blue;
+            font-weight: bold;
+        }
+        div::first-line{
+            color :red;
+        }
+
+    </style>
+</head>
+<body>
+    <!--유사클래스와 비슷한 개념의 유사 엘리먼트를 학습 -->
+    <!-- 유사클래스 : 실제 아이디, 이름, 태그명이 아닌 요소의 상태로도
+    가리키는 방법을 제공, selector의 확장
+        유사앨리먼트 : 문서내의 요소를 가리킬 때, 그요소의 순서, 위치등으로
+                        가리키는 방법을 제공, selector의 확장 
+        유사클래스와 유사엘리먼트는 어떻게 구분하는가?
+        CSS3부터는 유사 엘리먼트에는 ::(더블콜론)을 이용
+        결론 - 문서내의 요소를 가리키는 방법을 다양하게 지원하기 위한
+        selector의 확장-->
+
+
+        <p>난 첫번째 자식 요소</p>
+        <p>난 두번째 자식 요소</p>
+        <p>난 세번째 자식 요소</p>
+       
+        <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor velit, bibendum in ultrices in, ultrices vitae purus. Integer eu vulputate felis. Curabitur eu dictum libero. Aliquam erat volutpat. Vestibulum nec turpis sodales, interdum tortor a, faucibus ipsum. Integer ultricies et eros in hendrerit. Nulla convallis auctor ultricies. In sed sagittis ex, a ullamcorper ex. Aliquam erat volutpat. Mauris vel nisi sem. Pellentesque posuere faucibus augue. Duis vel interdum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur a dui ut quam tincidunt imperdiet sed vel urna.
+                Maecenas malesuada, ipsum eget porta ultrices, felis purus euismod purus, sed venenatis urna odio dignissim dolor. Morbi commodo ultricies leo eu pretium. Aenean et arcu tortor. Cras vitae velit a leo ultricies varius id non augue. In suscipit mauris sit amet urna blandit lacinia et sollicitudin dolor. Quisque ullamcorper lorem eget enim eleifend facilisis. Nullam eu massa pharetra, cursus enim quis, consectetur nibh. Mauris libero nibh, condimentum et libero at, viverra ullamcorper justo. Proin feugiat ex lacus, non convallis massa gravida ut. Quisque sit amet odio ante. Aenean nec lobortis leo. Praesent vel nibh rutrum, pellentesque dui in, pulvinar erat. Donec rhoncus scelerisque orci, quis iaculis lectus luctus id. Quisque efficitur sagittis enim, vel sodales turpis semper at.
+                Suspendisse eleifend est quam, vel faucibus nulla accumsan id. Praesent hendrerit libero vitae consequat faucibus. Proin fermentum nulla tempus ante laoreet, porttitor accumsan nunc volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque luctus erat mi, ut vehicula dolor varius sit amet. Praesent in sodales eros. Nullam quis condimentum lectus, at semper ante.
+                Ut non condimentum elit. Aliquam erat volutpat. Phasellus ut lacus non nulla pretium sollicitudin non ut dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam turpis leo, aliquet vitae urna id, luctus tristique nisi. Praesent sollicitudin dapibus metus, non mollis magna consequat vel. Proin erat lectus, facilisis at lacinia quis, sagittis nec est. Aenean in luctus risus. Phasellus ac leo vel eros maximus scelerisque. Pellentesque sit amet odio viverra, viverra mauris id, imperdiet turpis. Phasellus ut mollis ligula, sed sodales nulla. Donec malesuada nulla a elit dignissim, non molestie lorem viverra. Nunc ut luctus massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Aenean et fermentum urna, ac ullamcorper eros. Pellentesque tincidunt purus eu eros egestas semper. Suspendisse potenti. Cras ex velit, semper non purus in, consequat semper erat. Integer finibus lorem et sapien ullamcorper tincidunt. Mauris vitae varius ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut nunc vitae libero consectetur placerat. Nulla aliquet pharetra lorem, condimentum consectetur orci aliquam ut. Nam eget elit lacus. Duis lectus turpis, sollicitudin quis metus sit amet, tempus viverra nisl. Suspendisse ipsum eros, bibendum non urna non, fringilla venenatis lectus. Phasellus ut magna accumsan, fermentum elit non, rutrum nulla. Etiam malesuada ante felis, eleifend varius eros hendrerit eu.
+                Aliquam eu blandit metus. Sed metus purus, pulvinar in metus at, rhoncus ultrices lacus. Praesent porttitor sit amet enim id tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus vestibulum porta est, ac sollicitudin enim. Proin rhoncus, turpis ac pharetra scelerisque, urna dolor accumsan felis, sit amet auctor tellus neque at diam. Fusce et gravida tellus. Nullam pellentesque sapien vitae lacus finibus, ac volutpat enim mollis. Aliquam imperdiet tellus ex, volutpat ullamcorper magna dapibus nec. Etiam egestas ultricies diam a congue. Duis sed imperdiet magna. Proin ac turpis elementum, rutrum nisi et, blandit nisl. Praesent nec metus porttitor, molestie turpis ut, vulputate tortor. Sed rutrum vestibulum sem sed feugiat.
+                Donec mauris mauris, mollis bibendum felis et, imperdiet gravida tellus. Fusce quis varius est, et viverra nibh. Quisque justo ligula, varius vitae posuere et, tempor lacinia turpis. Curabitur sollicitudin feugiat felis, non sagittis urna rhoncus id. Quisque ut ante libero. Sed accumsan maximus libero vel sagittis. Sed vel mi convallis, pretium ante at, suscipit dui. Phasellus lorem neque, varius non augue in, cursus feugiat diam. Morbi eleifend pharetra nisl, ac fermentum sem malesuada vitae. Vestibulum molestie scelerisque arcu eu auctor. Morbi malesuada bibendum mauris, ut vestibulum dui posuere a. Etiam euismod varius augue, vitae malesuada massa ultrices ut. Integer nulla nibh, vehicula sed tristique nec, porttitor id est.
+        </div>
+<body>
+</html>

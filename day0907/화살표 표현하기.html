@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>화살표 표현하기</title>
+
+<style>
+/*4개의 스팬에 공통적으로 적용할 스타일
+    모든 tag박스이고, 
+    block:같은행에 그 어떤 태그와 공존불가, 너비, 높이 지정 가능
+    inline : block의 반대
+*/
+.arrow{
+    border:solid red;
+    border-width : 0px 3px 3px 0px; /*top rigth bottom left*/
+    display:inline-block; /*인라인 이면서 높이, 너비 지정 가능*/
+    padding :3px;
+    margin-left: 20px; /*서로 간격 띄우기*/
+}
+/*우측 화살표*/
+.right {
+    transform: rotate(-45deg); /*좌측으로 45도 돌린다.*/
+}
+/*하단*/
+.down {
+    transform: rotate(45deg); /*좌측으로 45도 돌린다.*/
+}
+/*좌측*/
+.left {
+    transform: rotate(135deg); /*좌측으로 45도 돌린다.*/
+}
+/*위쪽*/
+.up {
+    transform: rotate(-135deg); /*좌측으로 45도 돌린다.*/
+}
+</style>
+
+</head>
+<body>
+	
+<!-- ctrl +슬래시 주석 -->
+<!-- shift + alt 복사 -->
+<!-- 특수문자 화살표가 아닌 순수 css만으로 화살표 만들기 -->
+<!-- span태크는, 문서 컨텐츠의 일부에 마크업하고 싶을 때 사용
+아무런 효과 없이 마크업만을 목적으로 할 때 오늘은 
+<span>태풍을</span> 조심하세요-->
+<span class ="arrow right"></span>
+<span class ="arrow down"></span>
+<span class ="arrow left"></span>
+<span class ="arrow up"></span>
+
+
+
+
+</body>
+</html>

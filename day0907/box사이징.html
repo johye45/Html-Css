@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box사이징</title>
+
+    <style>
+        /*
+        html요소의 실제너비는 = 자기의 width + border + padding
+        html요소의 실제높이는 = 자기의 height + border + padding
+        
+        */
+#box1{
+    width : 190px;
+    height: 200px;
+    background: red;
+    padding-left:10px;/*전체 크기에 영향 준다*/
+    border : 10px solid black;/*전체 크기에 영향 준다*/
+}
+
+#box2{
+    width : 200px;
+    height: 200px;
+    background: yellow;
+    border : 10px solid blue;
+    box-sizing : border-box; /*실제width = width + border + padding 알아서 계산*/
+    padding : 30px;
+}
+    </style>
+</head>
+<body>
+    <div id = "box1">box1</div>  
+
+    <div id = "box2">box2</div>
+
+</body>
+</html>
